@@ -1,0 +1,275 @@
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding-top: 131px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.rectangle {
+  position: static;
+  width: 220px;
+  height: 220px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #aeb5b6;
+  border-radius: 3px;
+  background-color: #e5f5ff;
+  -webkit-transition: height 200ms ease, width 200ms ease;
+  transition: height 200ms ease, width 200ms ease;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.rectangle:hover {
+  background-color: #fff;
+}
+
+.body {
+  overflow: hidden;
+  height: 100%;
+}
+
+.resize_controls {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.resize_controls.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.control {
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 9px;
+  height: 9px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #7482a3;
+  border-radius: 1px;
+  background-color: #fff;
+  cursor: nwse-resize;
+}
+
+.control:hover {
+  background-color: #9a9cc9;
+}
+
+.control.top_right {
+  left: auto;
+  right: -4px;
+  cursor: nesw-resize;
+}
+
+.control.bottom_right {
+  left: auto;
+  top: auto;
+  right: -4px;
+  bottom: -4px;
+}
+
+.control.bottom_left {
+  left: -4px;
+  top: auto;
+  bottom: -4px;
+  cursor: nesw-resize;
+}
+
+.control.right_mid {
+  left: auto;
+  top: auto;
+  right: -4px;
+  cursor: ew-resize;
+}
+
+.control.left_mid {
+  left: -4px;
+  top: auto;
+  right: auto;
+  cursor: ew-resize;
+}
+
+.content_info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+}
+
+.container_unit {
+  display: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.container_unit.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.controls {
+  position: relative;
+  z-index: 30;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: #f1f1f1;
+  box-shadow: 0 7px 0 0 hsla(0, 0%, 98.7%, 0.5);
+}
+
+.action_button {
+  margin-right: 10px;
+  margin-left: 0px;
+  padding: 11px 25px 11px 25px;
+  border-radius: 8px;
+  background-color: #353535;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.action_button:hover {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+.div-block {
+  padding: 15px;
+  cursor: alias;
+}
+
+.div-block:hover {
+  background-color: #e8f2fc;
+}
+
+.guide {
+  position: absolute;
+  left: 0px;
+  top: 311px;
+  width: 100vw;
+  height: 1px;
+  border-bottom: 1px dashed #aec4f8;
+}
+
+.guide._2 {
+  bottom: 709px;
+}
+
+.v_huide {
+  position: absolute;
+  bottom: 0px;
+  width: 1px;
+  height: 100vh;
+  border-bottom: 1px dashed #1859f1;
+  border-left: 1px solid #aec4f8;
+}
+
+.v_huide._2 {
+  top: 0px;
+  right: 997px;
+  bottom: auto;
+}
+
+.guides {
+  display: none;
+}
+
+.guides.active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.div-block-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 479px) {
+  .controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .action_button {
+    white-space: nowrap;
+  }
+
+  .div-block-3 {
+    margin-top: 20px;
+  }
+}
